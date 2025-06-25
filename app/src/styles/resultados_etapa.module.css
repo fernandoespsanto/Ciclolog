@@ -1,0 +1,60 @@
+.resultadosTable {
+  width: 100%;
+  table-layout: fixed; /* Importante para controlar larguras */
+  border-collapse: collapse;
+  font-size: 0.75rem;
+}
+
+.resultadosTable input,
+.resultadosTable select {
+  font-size: 0.75rem;
+  padding: 4px 6px;
+}
+
+.resultadosTable td:nth-child(1),  /* ID */
+.resultadosTable th:nth-child(1) {
+  width: 10px;
+  white-space: nowrap;
+}
+
+.resultadosTable td:nth-child(2),  /* Tempo */
+.resultadosTable th:nth-child(2) {
+  width: 130px;
+  white-space: nowrap;
+}
+
+.resultadosTable td:nth-child(3),  /* Tempo */
+.resultadosTable th:nth-child(3) {
+  width: 140px;
+  white-space: nowrap;
+}
+
+.resultadosTable td:nth-child(4),  /* Tempo */
+.resultadosTable th:nth-child(4) {
+  width: 80px;
+  white-space: nowrap;
+}
+.resultadosTable td:nth-child(5),  
+.resultadosTable th:nth-child(5) {
+  width: 60px;
+  white-space: nowrap;
+}
+
+.resultadosTable td:nth-child(6),  
+.resultadosTable th:nth-child(6) {
+  width: 60px;
+  white-space: nowrap;
+}
+
+.resultadosTable td:nth-child(7),
+.resultadosTable th:nth-child(7) {
+  width: auto;
+  min-width: 150px;
+}
+
+.resultadosTable td:nth-child(8),
+.resultadosTable th:nth-child(8) {
+  width: 45px;
+  white-space: nowrap;
+}
+

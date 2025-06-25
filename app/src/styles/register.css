@@ -1,0 +1,91 @@
+.register-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 48px auto;
+}
+
+.logo img {
+  max-height: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: var(--primary);
+  margin-bottom: 28px;
+  font-size: 23px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 93%;
+  padding: 11px 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+textarea { resize: vertical; min-height: 40px; }
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #1B5E20;
+}
+
+.links {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.links a {
+  color: var(--primary);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-bottom: 13px;
+}

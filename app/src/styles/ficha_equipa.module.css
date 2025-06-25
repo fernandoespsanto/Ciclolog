@@ -1,0 +1,60 @@
+ :root{--primary:#2E7D32;--accent:#FFC107;--dark:#263238;--light:#ECEFF1;--sidebar-width:240px;}
+        body{font-family:'Open Sans',sans-serif;margin:0;background:var(--light);}
+        header{background:linear-gradient(135deg,var(--primary),#4CAF50);color:#fff;padding:1rem 0;box-shadow:0 2px 5px rgba(0,0,0,0.08);}
+        .header-content{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+        .logo{display:flex;align-items:center;font-size:1.5rem;font-weight:700;}
+        .logo img{height:42px;margin-right:12px;}
+        .user-menu{display:flex;align-items:center;gap:20px;}
+        .sidebar{width:var(--sidebar-width);min-height:calc(100vh - 64px);background:#fff;box-shadow:2px 0 10px rgba(46,125,50,0.06);position:fixed;top:64px;left:0;padding:32px 0 0 0;z-index:2;}
+        .sidebar nav ul{list-style:none;padding:0;margin:0;}
+        .sidebar nav ul li a{display:flex;align-items:center;gap:16px;padding:14px 32px;color:var(--dark);text-decoration:none;font-weight:600;transition:background .2s,color .2s;}
+        .sidebar nav ul li a.active,.sidebar nav ul li a:hover{background:var(--light);color:var(--primary);}
+        main{margin-left:var(--sidebar-width);padding:2.5rem 2rem;}
+        .ficha-grid { display: flex; gap: 42px; align-items: flex-start; }
+        .form-equipa{background:#fff;max-width:420px;width:100%;margin:0;padding:2rem 2.2rem 1.5rem 2.2rem;border-radius:9px;box-shadow:0 1px 5px rgba(46,125,50,0.08);}
+        h2{margin-bottom:2rem;}
+        .form-group{margin-bottom:22px;}
+        label{font-weight:600;display:block;margin-bottom:7px;}
+        input,select{width:100%;padding:11px 12px;border:1px solid #ccc;border-radius:5px;font-size:16px;}
+        input[readonly],select[disabled]{background:#f3f3f3;}
+        .btn-row{display:flex;gap:18px;margin-top:18px;}
+        .btn{background:var(--primary);color:#fff;padding:10px 22px;border:none;border-radius:4px;font-weight:600;cursor:pointer;text-decoration:none;}
+        .btn:hover{background:#226624;}
+        /* NOVO: painel da composição */
+        .composicao-box {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 5px rgba(46,125,50,0.08);
+            padding: 1.7rem 1.3rem 1.3rem 1.3rem;
+            min-width: 300px;
+            max-width: 340px;
+            margin-top: 0.7rem;
+        }
+        .composicao-box h4 {
+            margin-top:0; margin-bottom:1.2rem;
+            color: var(--primary);
+            font-size: 1.2rem;
+            font-family:'Montserrat',sans-serif;
+        }
+        .composicao-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .composicao-list li {
+            padding: 7px 0 7px 2px;
+            border-bottom: 1px solid #eee;
+            display:flex;
+            align-items:center;
+            gap:8px;
+            font-size: 15px;
+        }
+        .composicao-list li:last-child{border-bottom:0;}
+        .composicao-ciclista-nome { font-weight:600; }
+        .composicao-ciclista-cat { font-size:13px;color:#666; }
+        @media(max-width:1100px) {
+            .ficha-grid{flex-direction:column;gap:18px;}
+            .composicao-box{margin-top:1.5rem;}
+            .form-equipa{max-width:100%;}
+        }
+        @media(max-width:900px){.sidebar{position:static;width:100%;min-height:auto;box-shadow:none;display:flex;justify-content:center;}main{margin-left:0;padding:1rem;}}
